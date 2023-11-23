@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
 html {
     overflow-x: hidden;
 }
@@ -13,6 +17,7 @@ html {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 header {
@@ -25,6 +30,7 @@ header > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
+    flex-direction: row;
 }
 
 nav {
@@ -50,6 +56,7 @@ nav li a {
 .menu-hamburguer {
     width: 32px;
     cursor: pointer;
+    height: 100%;
 }
 
 
@@ -63,8 +70,33 @@ nav li a {
 
 .container-flex {
     display: flex;
+    
+    width: 600px;
 }
 
-#sobre-a-loja img {
-    max-width: 400px;
+.container-flex img {
+    width: 300px;
+    height: auto;
+}
+
+#sobre-a-loja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#titulo-loja {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:10px;
+    font-family: 'Sora', sans-serif;
+}
+
+.about-store p {
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Sora', sans-serif;
 }
