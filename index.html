@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-flex">
             <h1>EBAC Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -46,15 +46,31 @@
         <img src="./images/slide2.png" alt="Carro da BMW">
         <img src="./images/slide3.png" alt="Carro da Ford">
     </div>
+    <section id="sobre-a-loja">
+        <div class="container-flex">
+            <img src="./images/loja.jpg" alt="Imagem da Loja EBAC Motors">
+            <div>
+                <h2>Sobre a EBAC Motors</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis similique ipsum explicabo rerum voluptatem, fuga sunt odio, sapiente vel cum quam distinctio, voluptatum eligendi suscipit. Possimus delectus blanditiis qui reprehenderit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis similique ipsum explicabo rerum voluptatem, fuga sunt odio, sapiente vel cum quam distinctio, voluptatum eligendi suscipit. Possimus delectus blanditiis qui reprehenderit.</p>
+            </div>
+        </div>
+    </section>
+
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('#carousel-imagens').slick({
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+
+        $('.menu-hamburguer').click(function (){
+            $('nav').slideToggle();
+        })
     })
 </script>
 </body>
