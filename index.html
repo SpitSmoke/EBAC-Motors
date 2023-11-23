@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Motors</title>
+    <link rel="icon" href="./icones/pneu.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link  href="https://fonts.googleapis.com/css2?family-Roboto:wght@400;700&display-swap" rel="stylesheet" />
@@ -50,7 +51,10 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('#carousel-imagens').slick();
+        $('#carousel-imagens').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
     })
 </script>
 </body>
