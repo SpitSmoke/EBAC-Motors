@@ -71,12 +71,13 @@ nav li a {
 .container-flex {
     display: flex;
     
-    width: 600px;
+    width: 700px;
 }
 
 .container-flex img {
-    width: 300px;
-    height: auto;
+    width: 325px;
+    height: 325px;
+    margin-top: 25px;
 }
 
 #sobre-a-loja{
@@ -91,12 +92,24 @@ nav li a {
 #titulo-loja {
     text-align: center;
     margin-top: 20px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     font-family: 'Sora', sans-serif;
+    color: #1c3061;
 }
 
 .about-store p {
     margin-left: 20px;
     font-size: 14px;
     font-family: 'Sora', sans-serif;
+}
+
+.segundo-p {
+    padding-top: 10px;
+}
+
+#ambiente-acolhedor {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    color: #1c3061;
 }
