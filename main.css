@@ -126,8 +126,8 @@ nav li a {
 
 .destaque-div {
     display: flex;
-    align-items: flex-start;
-    width: 700px;
+    /* align-items: flex-start; */
+    width: 100%;
     flex-direction: column;
 }
 
@@ -135,25 +135,52 @@ nav li a {
     font-family: 'Sora', sans-serif;
     color: #1c3061;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /* estilo da lista */
 .destaque-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .destaque-list p{
-    padding-top: 20px;
+    padding-top: 10px;
+    width: 318px;
 }
 
+.destaque-list li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
 .img-carro {
-    max-width: 100% !important;
+    width: 250px !important;
+    height: 140px;
 }
 
 
 
 .item-central {
-    margin: 0 5%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+ /*  de estilo da lista  */
+
