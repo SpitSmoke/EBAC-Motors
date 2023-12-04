@@ -24,6 +24,10 @@ header {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header > .container {
@@ -236,7 +240,36 @@ button{
     width: 190px;
     height: 30px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
 /* fim estilo do formulario */
+
+/* estilo do footer */
+footer {
+    background-color: #192a56;
+    color: #fff;
+} 
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+    margin: 10px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+.lista-media {
+    display: flex;
+}
