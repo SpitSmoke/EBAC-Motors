@@ -8,7 +8,10 @@ $(document).ready(function() {
         $('nav').slideToggle();
     });
 
-    $('#nome').mask('', {
+    $('#nome').mask('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', {
+        translation: {
+            'A': { pattern: /[a-zA-ZÀ-ú\s]/ }
+        },
         placeholder: 'Ebac Motors da Silva'
     });
 
@@ -52,4 +55,14 @@ $('form').validate({
     }
 });
 
+$('.lista-veiculos button').click(function(){
+    const destino = $('#mensagem');
+    const nomeVeiculo = $(this).parent().find('h3').text();
+
+    $('#veiculo-interesse').val(nomeVeiculo);
+
+    $('html').animate({
+        scrollTop: destino.offset().top
+    }, 1000)
+    })
 });
